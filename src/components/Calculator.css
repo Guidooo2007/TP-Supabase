@@ -1,0 +1,104 @@
+.calculator {
+  width: 320px;
+  background: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.calculator-display {
+  background: #fff;
+  padding: 20px;
+  text-align: right;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.calculator-keypad {
+  display: flex;
+}
+
+.input-keys {
+  width: 75%;
+}
+
+.function-keys {
+  display: flex;
+}
+
+.digit-keys {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.operator-keys {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.calculator-key {
+  height: 65px;
+  border: none;
+  border-radius: 5px;
+  margin: 2px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.calculator-key:hover {
+  background-color: #e0e0e0;
+}
+
+.calculator-key:active {
+  background-color: #d0d0d0;
+}
+
+.key-0 {
+  width: calc(66.666% - 4px);
+}
+
+.key-dot {
+  width: calc(33.333% - 4px);
+}
+
+.key-1, .key-2, .key-3, .key-4, .key-5, .key-6, .key-7, .key-8, .key-9 {
+  width: calc(33.333% - 4px);
+}
+
+.key-clear {
+  width: 100%;
+  background-color: #ff9999;
+  color: white;
+}
+
+.key-clear:hover {
+  background-color: #ff7777;
+}
+
+.operator-keys .calculator-key {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.key-equals {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.key-equals:hover {
+  background-color: #45a049;
+} 
